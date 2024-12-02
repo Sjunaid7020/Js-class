@@ -40,3 +40,27 @@ const myfunction = function(){
 }
 
 console.log(typeof id)
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+// Stack (Primitive), Heap (Non-Premitive)
+
+let url = 'www.youtube.com'
+let anotherUrl= url
+
+anotherUrl='www.google.com'
+
+console.log(url)
+console.log(anotherUrl)
+
+let userOne ={
+    email:'user@gmail.com',
+    upi:'user@uip'
+};
+
+let userTwo = userOne;
+
+userTwo.email= 'userTwo@google.com'
+
+console.log(userOne.email)
+console.log(userTwo.email)
