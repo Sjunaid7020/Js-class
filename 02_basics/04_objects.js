@@ -38,9 +38,25 @@ const  obj4 ={
 const obj3 ={...obj1,...obj2}//most used
 //console.log(obj3)
 
-console.log(tinderUser)
+//console.log(tinderUser)
 
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+//console.log(Object.keys(tinderUser))
+//console.log(Object.values(tinderUser))
+//console.log(Object.entries(tinderUser))
+//console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+const course={
+    coursename:'js',
+    price:'999',
+    courseInstructor:'ABC'
+}
+
+const {courseInstructor: inst} = course;
+
+//console.log(inst);
+
+//{
+//    'name':"Alpha",
+//    'coursename':'js',
+//    'price':'free'
+//}
