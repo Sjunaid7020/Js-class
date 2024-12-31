@@ -31,10 +31,10 @@ for (let index=0; index<myArray.length; index++){
 //    console.log(`value of i is ${i}`)
 //}
 
-for (let i =1;i<=20;i++){
-    if (i == 5){
-        console.log('5 Detected')
-        continue
-    }
-    console.log(`value of i is ${i}`)
-}
+//for (let i =1;i<=20;i++){
+//    if (i == 5){
+//        console.log('5 Detected')
+//        continue
+//    }
+//    console.log(`value of i is ${i}`)
+//}
