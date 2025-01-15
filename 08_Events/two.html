@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                         <title>Document</title>
+</head>
+<body style="background-color: #414141; color: #ffffff">
+    <h1>setTimeout()</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayName = () =>{
+        console.log('XYZ')
+    }
+    const changeText = () =>{
+        document.querySelector('h1').innerHTML='setTimeout and clearTimeout()'
+    }
+    const changeMe = setTimeout(changeText,2000)
+   document.querySelector('#stop').addEventListener('click',()=>{
+        clearTimeout(changeMe)
+        console.log('stop')
+    })
+</script>
+</html>
