@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+             <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                         <title>Document</title>
+</head>
+<body style="background-color: #414141; color: #ffffff">
+    <h1>setInterval()</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = ()=>{
+        console.log('hi',Date.now())
+    }
+
+    document.querySelector('#start').addEventListener('click',function (){
+        const nameStart = setInterval(sayDate,1000)
+        console.log('start')
+        document.querySelector('#stop').addEventListener('click',function (){
+            clearInterval(nameStart)
+            console.log('stop')
+        })
+    })
+
+
+
+
+</script>
+</html>
