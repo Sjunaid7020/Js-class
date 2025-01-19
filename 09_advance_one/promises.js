@@ -101,3 +101,15 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .catch((err)=>{
     console.log(err)
 })
+
+
+fetch('https://api.github.com/users/hiteshchoudhary')
+    .then((res)=>{
+        return res.json()
+    })
+    .then((data)=>{
+        console.log(data)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
