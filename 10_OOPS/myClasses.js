@@ -33,8 +33,12 @@ User.prototype.encryptPassword = function() {
 User.prototype.createUppercase=function() {
     return `${this.username.toUpperCase()}`
 }
+User.prototype.addStar = function () {
+    return`${this.username } hello`
+}
 
 const tea = new User('tea','tea@example.com','456');
 
 console.log(tea.encryptPassword());
 console.log(tea.createUppercase());
+console.log(tea.addStar());
