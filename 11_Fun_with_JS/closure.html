@@ -17,23 +17,35 @@
     // }
     // init();
 
-    function outer() {
-        let username = 'XYZ'
-        function inner() {
-            let secret = 'my123'
-            console.log('inner',username);
-        }
-        function innerTwo() {
-            console.log('innerTwo', username);
-            console.log(secret);
+    // function outer() {
+    //     let username = 'XYZ'
+    //     function inner() {
+    //         let secret = 'my123'
+    //         console.log('inner',username);
+    //     }
+    //     function innerTwo() {
+    //         console.log('innerTwo', username);
+    //         console.log(secret);
             
             
+    //     }
+    //     inner();
+    //     innerTwo();
+    // }
+    // outer();
+    // console.log("Too outer", username);
+    
+
+    function makeFun() {
+        const name = "Mozilla";
+        function displayName(){
+            console.log(name);
         }
-        inner();
-        innerTwo();
+        return displayName;
     }
-    outer();
-    console.log("Too outer", username);
+
+    const myFunc = makeFun();
+    myFunc();
     
   </script>
 </html>
